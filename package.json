@@ -1,0 +1,22 @@
+{
+  "name": "es6-lib-starter",
+  "version": "0.1.0",
+  "description": "Library starter",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antony Budianto <antonybudianto@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  }
+}
