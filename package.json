@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Library starter",
   "main": "lib/index.js",
+  "module": "src/index.js",
   "files": [
     "lib",
     "package.json",
