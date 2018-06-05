@@ -14,7 +14,8 @@
     "build": "babel src -d lib --ignore spec.js",
     "lint": "eslint src",
     "test": "jest",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\""
   },
   "author": "Antony Budianto <antonybudianto@gmail.com>",
   "license": "MIT",
@@ -26,6 +27,7 @@
     "babel-preset-env": "^1.7.0",
     "eslint": "^4.19.1",
     "eslint-plugin-jest": "^21.17.0",
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "prettier": "1.13.4"
   }
 }
