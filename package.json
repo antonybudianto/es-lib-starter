@@ -1,8 +1,9 @@
 {
-  "name": "es6-lib-starter",
+  "name": "es-lib-starter",
   "version": "0.1.0",
   "description": "Library starter",
   "main": "lib/index.js",
+  "module": "src/index.js",
   "files": [
     "lib",
     "package.json",
@@ -12,17 +13,23 @@
   "scripts": {
     "build": "babel src -d lib --ignore spec.js",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "release": "np",
+    "prepublish": "npm run build",
+    "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\""
   },
   "author": "Antony Budianto <antonybudianto@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-jest": "^21.2.0",
-    "babel-preset-env": "^1.6.0",
-    "eslint": "^4.8.0",
-    "eslint-plugin-jest": "^21.2.0",
-    "jest": "^21.2.1"
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-jest": "^21.17.0",
+    "jest": "^23.1.0",
+    "np": "^3.0.4",
+    "prettier": "1.13.4"
   }
 }

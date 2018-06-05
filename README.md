@@ -1,9 +1,11 @@
 # ES Lib Starter
+
 Template starter for developing ES Library
 
 ## Development
 
 Link your library for local use
+
 ```
 npm link
 
@@ -12,19 +14,29 @@ npm link <my-lib>
 ```
 
 ## Test
+
 ```
 npm test
 ```
 
 ## Build
+
 ```
 npm run build
 ```
 
 ## Publish
+
 ```
 npm publish
 ```
 
+or using [np](https://github.com/sindresorhus/np)
+
+```
+npm run release
+```
+
 ## License
+
 MIT
