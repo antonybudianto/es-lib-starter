@@ -14,8 +14,8 @@
     "build": "babel src -d lib --ignore spec.js",
     "lint": "eslint src",
     "test": "jest",
+    "prerelease": "npm run build",
     "release": "np",
-    "prepublish": "npm run build",
     "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\""
   },
   "author": "Antony Budianto <antonybudianto@gmail.com>",
