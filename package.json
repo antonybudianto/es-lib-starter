@@ -1,5 +1,5 @@
 {
-  "name": "es6-lib-starter",
+  "name": "es-lib-starter",
   "version": "0.1.0",
   "description": "Library starter",
   "main": "lib/index.js",
