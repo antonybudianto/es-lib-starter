@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "babel src -d lib --ignore spec.js",
+    "start": "babel src -d lib --watch --ignore spec.js",
     "lint": "eslint src",
     "test": "jest",
     "prerelease": "npm run build",
