@@ -11,26 +11,29 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "babel src -d lib --ignore spec.js",
-    "start": "babel src -d lib --watch --ignore spec.js",
+    "build": "babel src -d lib --extensions \".ts,.tsx\" --ignore spec.ts",
+    "start": "babel src -d lib --extensions \".ts,.tsx\" --watch --ignore spec.ts",
     "lint": "eslint src",
     "test": "jest",
     "prerelease": "npm run build",
     "release": "np",
-    "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\""
+    "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.ts\""
   },
   "author": "Antony Budianto <antonybudianto@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-jest": "^23.0.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/jest": "^23.3.13",
+    "babel-jest": "^24.0.0",
     "eslint": "^4.19.1",
-    "eslint-plugin-jest": "^21.17.0",
-    "jest": "^23.1.0",
-    "np": "^3.0.4",
-    "prettier": "1.13.4"
+    "eslint-plugin-jest": "^22.1.3",
+    "jest": "^24.0.0",
+    "np": "^3.1.0",
+    "prettier": "1.16.1"
   }
 }

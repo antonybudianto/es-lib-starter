@@ -1,6 +1,6 @@
 # ES Lib Starter
 
-Template starter for developing ES Library
+Template starter for developing ES Library with TypeScript
 
 ## Development
 

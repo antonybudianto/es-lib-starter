@@ -1,8 +1,7 @@
 {
-  "presets": [
-    "env"
-  ],
+  "presets": ["@babel/env", "@babel/preset-typescript"],
   "plugins": [
-    "transform-object-rest-spread"
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread"
   ]
 }
