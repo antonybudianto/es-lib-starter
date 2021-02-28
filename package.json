@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "babel src -d lib --ignore \"src/**/*.spec.ts\" --extensions \".ts,.tsx\"",
+    "build:cjs": "MODULE=cjs npm run build",
     "start": "npm run build -- --watch",
     "lint": "eslint src",
     "test": "jest",

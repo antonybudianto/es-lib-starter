@@ -1,3 +1,6 @@
+import {add} from './math';
+
 export function hello(name = 'World') {
-  console.log('hello', name);
+  const res = add(12);
+  console.log('hello', name, res);
 }
